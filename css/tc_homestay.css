@@ -387,3 +387,123 @@ footer {
   text-align: center;
   padding: 10px;
 }
+/* MÁY TÍNH BẢNG: giữ nguyên kiểu hiển thị như máy tính */
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .search-submenu {
+    right: 15px;
+    width: 250px;
+  }
+
+  .menu {
+    right: 0;
+    width: 280px;
+  }
+
+  .menu-item {
+    font-size: 16px;
+  }
+
+  .submenu a {
+    font-size: 15px;
+  }
+
+  .account-form input,
+  .account-form button {
+    font-size: 15px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+}
+
+/* ĐIỆN THOẠI */
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .search-submenu {
+    width: 100vw;
+    right: 0;
+    left: 0;
+    top: 65px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+  }
+
+  #searchInput {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #searchResults li {
+    font-size: 14px;
+  }
+
+  .menu {
+  position: fixed;
+  top: 65px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 65px);
+  background: #ede7db;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: 1000;
+  overflow-y: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.menu.show {
+  transform: translateX(0);
+}
+
+  .menu-item {
+    font-size: 17px;
+  }
+
+  .submenu a {
+    font-size: 15px;
+  }
+
+  .account-form input,
+  .account-form button {
+    font-size: 16px;
+  }
+
+  .search-toggle,
+  .menu-toggle {
+    font-size: 22px;
+  }
+
+  .arrow {
+    font-size: 18px;
+  }
+}

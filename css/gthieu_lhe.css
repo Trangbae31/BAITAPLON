@@ -288,7 +288,7 @@ body {
   background: white;
   border: 2px solid #ccc;
   border-radius: 15px;
-  width: 220px;
+  width: 320px;
   padding: 20px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -301,6 +301,10 @@ body {
 .founder-card .icon {
   font-size: 3em;
   margin-bottom: 10px;
+}
+
+.founder-card h3 {
+  font-size: 25px;
 }
 
 .section-box {
@@ -322,6 +326,7 @@ body {
   background-color: #004d3c;
   color: white;
   margin-top: 20px;
+  font-size: 20px;
 }
 
 /* Câu trích dẫn */
@@ -329,11 +334,13 @@ body {
   font-style: italic;
   color: orangered;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 /* Đoạn mô tả dưới quote */
 .description {
   color: #444;
+  font-size: 22px;
 }
 
 /* Footer */

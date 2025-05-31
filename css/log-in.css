@@ -89,3 +89,21 @@ span {
   font-style: italic;
   margin-top: 10px;
 }
+
+/* Responsive cho máy tính bảng */
+@media (max-width: 768px) {
+  body {
+    padding: 40px 20px;
+    min-height: 100vh;         
+    font-size: 15px;
+  }
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 480px) {
+  body {
+    padding: 20px 10px;
+    min-height: 100vh;
+    font-size: 14px;
+  }
+}
