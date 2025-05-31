@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>13 Vietnam Travel - Giới thiệu</title>
+  <link rel="stylesheet" href="/BAITAPLON/css/gthieu_lhe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Nav-bar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <div class="logo">
+        <img src="/BAITAPLON/img/logo.jpg" alt="Logo" />
+      </div>
+    </div>
+    <div class="navbar-right">
+        <a href="/BAITAPLON/html/trangchu.html" class="home-toggle"><i class="fa fa-home"></i></a>
+      <div class="search-toggle" onclick="toggleSearch()">
+        <i class="fa fa-search"></i>
+      </div>
+      <div id="searchBox" class="search-submenu">
+        <input type="text" id="searchInput" placeholder="Tìm tỉnh thành..." />
+        <ul id="searchResults"></ul>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu thả -->
+  <div class="menu" id="menu">
+    <div class="menu-item"><a href="/BAITAPLON/html/log-in.html" id="accountLink">Tài khoản</a></div>
+    <div class="menu-item cac_loai_hinh_du_lich">
+      <div class="menu-header" onclick="toggleSubMenu('travelTypesSubmenu', this)">
+        Các loại hình du lịch
+        <span class="arrow">&#9660</span>
+      </div>
+      <div class="submenu" id="travelTypesSubmenu">
+            <a href="/BAITAPLON/html/clhdl/clhdl_1.html">Du lịch nghỉ dưỡng</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_2.html">Du lịch sinh thái</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_3.html">Du lịch văn hóa - lịch sử</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_4.html">Du lịch mạo hiểm</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_5.html">Du lịch ẩm thực</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_6.html">Du lịch tự túc</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_7.html">Du lịch theo tour</a>
+      </div>
+    </div>
+    <a href="/BAITAPLON/html/tin_tuc/tt_all.html" class="menu-item">Tin tức</a>
+    <a href="/BAITAPLON/html/gthieu_lhe.html" class="menu-item">Giới thiệu - Liên hệ</a>
+  </div>
+
+  <section class="intro-section">
+    <h2 class="title">Meet the Founders</h2>
+    <div class="card-container">
+      <div class="founder-card">
+        <div class="icon"><i class="fa-solid fa-user"></i></div>
+        <h3>Trang</h3>
+        <p>MSV: 12345678</p>
+      </div>
+      <div class="founder-card">
+        <div class="icon"><i class="fa-solid fa-user"></i></div>
+        <h3>Minh</h3>
+        <p>MSV: 23456789</p>
+      </div>
+      <div class="founder-card">
+        <div class="icon"><i class="fa-solid fa-user"></i></div>
+        <h3>Hưng</h3>
+        <p>MSV: 34567890</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- quote -->
+  <div class="section-box yellow-section">
+    <p class="quote">"Travel is the only thing you buy that makes you richer."</p>
+    <p class="description">
+      13 VIETNAM TRAVEL là trang web giúp bạn khám phá vẻ đẹp khắp 3 miền đất nước với trải nghiệm hình ảnh chân thực và thông tin bổ ích về các điểm đến hấp dẫn.
+    </p>
+  </div>
+
+  <!-- liên hệ-->
+  <div class="section-box contact-section">
+    <p>Liên hệ chúng tôi tại: contact@13vietnamtravel.vn</p>
+    <p>Điện thoại: 0123 456 789</p>
+    <p>Facebook | Instagram | TikTok | YouTube</p>
+    <p>© 2025 13 VIETNAM TRAVEL</p>
+  </div>
+
+  <!-- Footer giữ nguyên -->
+  <footer>
+    <p>One Country - Endless Journeys <br> Powered by 13 VIETNAM TRAVEL.</p>
+  </footer>
+
+  <script src="/BAITAPLON/js/gthieu_lhe.js"></script>
+</body>
+</html>

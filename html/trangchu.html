@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Du Lịch Việt Nam</title>
+  <link rel="stylesheet" href="/BAITAPLON/css/trangchu.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!--Nav-->
+  <nav class="navbar">
+    <div class="navbar-left">
+  <!--logo-->
+      <div class="logo">
+        <img src="/BAITAPLON/img/logo.jpg" alt="Logo" />
+      </div>
+    </div>
+    <div class="navbar-right">
+  <!--Tìm kiếm-->
+      <div class="search-toggle" onclick="toggleSearch()">
+        <i class="fa fa-search"></i>
+      </div>
+      <div id="searchBox" class="search-submenu">
+        <input type="text" id="searchInput" placeholder="Tìm tỉnh thành..." />
+        <ul id="searchResults"></ul>
+      </div>
+  <!--menu-->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</nav>
+    <!--TP Menu-->
+      <div class="menu" id="menu">
+      <!-- Tài khoản -->
+        <div class="menu-item">
+          <a href="/BAITAPLON/html/log-in.html" id="accountLink">Tài khoản</a>
+        </div>
+        <!-- Các loại hình du lịch -->
+        <div class="menu-item cac_loai_hinh_du_lich">
+          <div class="menu-header" onclick="toggleSubMenu('travelTypesSubmenu', this)">
+            Các loại hình du lịch
+            <span class="arrow">&#9660</span>
+          </div>
+          <div class="submenu" id="travelTypesSubmenu">
+            <a href="/BAITAPLON/html/clhdl/clhdl_1.html">Du lịch nghỉ dưỡng</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_2.html">Du lịch sinh thái</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_3.html">Du lịch văn hóa - lịch sử</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_4.html">Du lịch mạo hiểm</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_5.html">Du lịch ẩm thực</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_6.html">Du lịch tự túc</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_7.html">Du lịch theo tour</a>
+          </div>
+        </div>
+        <a href="/BAITAPLON/html/tin_tuc/tt_all.html" class="menu-item">Tin tức</a>
+        <a href="/BAITAPLON/html/gthieu_lhe.html" class="menu-item">Giới thiệu - Liên hệ</a>
+      </div>
+    </div>
+  </nav>
+<!--Content-->
+  <div class="carousel-container">
+    <div class="carousel-slide active">
+      <img src="/BAITAPLON/img/trangchu/banner.jpg" alt="Banner" />
+    </div>
+    <div class="carousel-slide">
+      <img src="/BAITAPLON/img/trangchu/mien-bac.jpg" alt="Miền Bắc" />
+      <div class="caption">
+        <h2>Miền Bắc</h2>
+        <p>Hùng vĩ núi non, cổ kính Hà Nội, thơ mộng Vịnh Hạ Long.</p>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="/BAITAPLON/img/trangchu/mien-trung.jpg" alt="Miền Trung" />
+      <div class="caption">
+        <h2>Miền Trung Nắng Gió</h2>
+        <p>Huế, Đà Nẵng, Hội An - nơi hội tụ di sản văn hóa.</p>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="/BAITAPLON/img/trangchu/mien-nam.jpg" alt="Miền Nam" />
+      <div class="caption">
+        <h2>Miền Nam Năng Động</h2>
+        <p>TP.HCM sôi động, Côn Đảo hoang sơ và nhiều điểm đến hấp dẫn.</p>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="/BAITAPLON/img/trangchu/mien-tay.jpg" alt="Miền Tây" />
+      <div class="caption">
+        <h2>Miền Tây Trù Phú</h2>
+        <p>Chợ nổi, sông nước, miệt vườn và tình người hiền hòa.</p>
+      </div>
+    </div>
+
+    <!-- Nút điều hướng -->
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+
+  <div class="map">
+      <img src="/BAITAPLON/img/trangchu/mapvn.png" alt="map" />
+    </div>
+  <footer>
+    <p>One Country - Endless Journeys <br> Powered by 13 VIETNAM TRAVEL.</p>
+  </footer>
+
+  <script src="/BAITAPLON/js/trangchu.js"></script>
+</body>
+</html>
