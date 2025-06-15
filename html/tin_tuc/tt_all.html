@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8">
   <title>Địa điểm du lịch</title>
   <link rel="stylesheet" href="/BAITAPLON/css/tin_tuc/tt_all.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Nav-bar -->
+<!--Nav-->
+<div class="all">
   <nav class="navbar">
     <div class="navbar-left">
+  <!--logo-->
       <div class="logo">
         <img src="/BAITAPLON/img/logo.jpg" alt="Logo" />
       </div>
     </div>
     <div class="navbar-right">
-        <a href="/BAITAPLON/html/trangchu.html" class="home-toggle"><i class="fa fa-home"></i></a>
+  <!--Home-->
+  <a href="/BAITAPLON/html/trangchu.html" class="home-toggle">
+    <i class="fa fa-home"></i>
+  </a>
+  <!--Tìm kiếm-->
       <div class="search-toggle" onclick="toggleSearch()">
         <i class="fa fa-search"></i>
       </div>
       <div id="searchBox" class="search-submenu">
-        <input type="text" id="searchInput" placeholder="Tìm tỉnh thành..." />
-        <ul id="searchResults"></ul>
-      </div>
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <i class="fa fa-bars"></i>
-      </div>
-    </div>
-  </nav>
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <ul id="searchResults">
+          <li data-value="an-giang" data-folder="where">An Giang</li>
+          <li data-value="ba-ria---vung-tau" data-folder="where">Bà Rịa - Vũng Tàu</li>
+          <li data-value="ben-tre" data-folder="where">Bến Tre</li>
+          <li data-value="binh-duong" data-folder="where">Bình Dương</li>
+          <li data-value="binh-phuoc" data-folder="where">Bình Phước</li>
 
-  <!-- Menu thả -->
-  <div class="menu" id="menu">
-    <div class="menu-item"><a href="/BAITAPLON/html/log-in.html" id="accountLink">Tài khoản</a></div>
-    <div class="menu-item cac_loai_hinh_du_lich">
-      <div class="menu-header" onclick="toggleSubMenu('travelTypesSubmenu', this)">
-        Các loại hình du lịch
-        <span class="arrow">&#9660</span>
+          <li data-value="rung-tram-tra-su" data-folder="tc_where">Rừng Tràm Trà Sư</li>
+          <li data-value="cho-noi-long-xuyen" data-folder="tc_where">Chợ nổi Long Xuyên</li>
+          <li data-value="suoi-khoang-nong-binh-chau" data-folder="tc_where">Suối khoáng nóng Bình Châu</li>
+          <li data-value="chua-banh-xeo" data-folder="tc_where">Chùa Bánh Xèo</li>
+          <li data-value="lang-nghe-banh-trang-my-long" data-folder="tc_where">Làng nghề bánh tráng Mỹ Lồng</li>
+          <li data-value="khu-du-lich-dai-nam" data-folder="tc_where">Khu du lịch Đại Nam</li>
+          <li data-value="vuon-quoc-gia-bu-gia-map" data-folder="tc_where">Vườn quốc gia Bù Gia Mập</li>
+        </ul>
       </div>
-      <div class="submenu" id="travelTypesSubmenu">
+  <!--menu-->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</nav>
+    <!--TP Menu-->
+      <div class="menu" id="menu">
+      <!-- Tài khoản -->
+        <div class="menu-item">
+          <a href="/BAITAPLON/html/log-in.html" id="accountLink">Tài khoản</a>
+        </div>
+        <!-- Các loại hình du lịch -->
+        <div class="menu-item cac_loai_hinh_du_lich">
+          <div class="menu-header" onclick="toggleSubMenu('travelTypesSubmenu', this)">
+            Các loại hình du lịch
+            <span class="arrow">&#9660</span>
+          </div>
+          <div class="submenu" id="travelTypesSubmenu">
             <a href="/BAITAPLON/html/clhdl/clhdl_1.html">Du lịch nghỉ dưỡng</a>
             <a href="/BAITAPLON/html/clhdl/clhdl_2.html">Du lịch sinh thái</a>
             <a href="/BAITAPLON/html/clhdl/clhdl_3.html">Du lịch văn hóa - lịch sử</a>
@@ -45,15 +70,17 @@
             <a href="/BAITAPLON/html/clhdl/clhdl_5.html">Du lịch ẩm thực</a>
             <a href="/BAITAPLON/html/clhdl/clhdl_6.html">Du lịch tự túc</a>
             <a href="/BAITAPLON/html/clhdl/clhdl_7.html">Du lịch theo tour</a>
+          </div>
+        </div>
+        <a href="/BAITAPLON/html/tin_tuc/tt_all.html" class="menu-item">Tin tức</a>
+        <a href="/BAITAPLON/html/gthieu_lhe.html" class="menu-item">Giới thiệu - Liên hệ</a>
       </div>
     </div>
-    <a href="/BAITAPLON/html/tin_tuc/tt_all.html" class="menu-item">Tin tức</a>
-    <a href="/BAITAPLON/html/gthieu_lhe.html" class="menu-item">Giới thiệu - Liên hệ</a>
-  </div>
+  </nav>
 
   <!-- Content -->
-<div class="news-container">
-  <div class="news-item">
+<div class="news-container" >
+  <div class="news-item" onclick="location.href='/BAITAPLON/html/tin_tuc/tt1.html'" >
     <img src="/BAITAPLON/img/tin_tuc/nhatrang.png" alt="Ảnh tin" class="news-img" />
     <div class="news-content">
       <h3 class="news-title">Top 15 cảnh đẹp Nha Trang đáng check in nhất 2025</h3>
@@ -66,10 +93,10 @@
     </div>
   </div>
 
-  <div class="news-item">
-    <img src="/BAITAPLON/img/tin_tuc/bentre.png" alt="Ảnh tin" class="news-img" />
+  <div class="news-item" onclick="location.href='/BAITAPLON/html/tin_tuc/tt2.html'">
+    <img src="/BAITAPLON/img/tin_tuc/brvt.jpg" alt="Ảnh tin" class="news-img" />
     <div class="news-content">
-      <h3 class="news-title">Top 18 Cảnh Đẹp Bến Tre Đốn Tim Du Khách</h3>
+      <h3 class="news-title">Top 10 điểm đến nên ghé ở Bà Rịa - Vũng Tàu</h3>
       <div class="news-info">
         <span>
             <img src="/BAITAPLON/img/logo.knen.png" alt="tag" class="tag-logo" />
@@ -79,6 +106,55 @@
     </div>
   </div>
 
+  <div class="news-item" onclick="location.href=''">
+    <img src="/BAITAPLON/img/img_minh_hoa.png" alt="Ảnh tin" class="news-img" />
+    <div class="news-content">
+      <h3 class="news-title">CARD MINH HOẠ LAYOUT</h3>
+      <div class="news-info">
+        <span>
+            <img src="/BAITAPLON/img/logo.knen.png" alt="tag" class="tag-logo" />
+        </span>
+        <span class="source">13 VIETNAM TRAVEL</span>
+      </div>
+    </div>
+  </div>
+
+    <div class="news-item" onclick="location.href=''">
+    <img src="/BAITAPLON/img/img_minh_hoa.png" alt="Ảnh tin" class="news-img" />
+    <div class="news-content">
+      <h3 class="news-title">CARD MINH HOẠ LAYOUT</h3>
+      <div class="news-info">
+        <span>
+            <img src="/BAITAPLON/img/logo.knen.png" alt="tag" class="tag-logo" />
+        </span>
+        <span class="source">13 VIETNAM TRAVEL</span>
+      </div>
+    </div>
+  </div>
+
+    <div class="news-item" onclick="location.href=''">
+    <img src="/BAITAPLON/img/img_minh_hoa.png" alt="Ảnh tin" class="news-img" />
+    <div class="news-content">
+      <h3 class="news-title">CARD MINH HOẠ LAYOUT</h3>
+      <div class="news-info">
+        <span>
+            <img src="/BAITAPLON/img/logo.knen.png" alt="tag" class="tag-logo" />
+        </span>
+        <span class="source">13 VIETNAM TRAVEL</span>
+      </div>
+    </div>
+  </div>
+
+    <div class="news-item" onclick="location.href=''">
+    <img src="/BAITAPLON/img/img_minh_hoa.png" alt="Ảnh tin" class="news-img" />
+    <div class="news-content">
+      <h3 class="news-title">CARD MINH HOẠ LAYOUT</h3>
+      <div class="news-info">
+        <span>
+            <img src="/BAITAPLON/img/logo.knen.png" alt="tag" class="tag-logo" />
+        </span>
+        <span class="source">13 VIETNAM TRAVEL</span>
+      </div>
     </div>
   </div>
 </div>

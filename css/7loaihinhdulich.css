@@ -7,6 +7,7 @@ body {
   font-family: "Baskerville", Times New Roman, serif;
   background: white;
   overflow-x: hidden;
+  background-color:#f7f7f7 ;
 }
 
 /* Navbar tổng */
@@ -79,7 +80,8 @@ body {
 }
 
 #searchResults {
-  list-style: none;
+  display: none;
+  list-style: none; 
   margin-top: 5px;
   max-height: 150px;
   overflow-y: auto;
@@ -157,7 +159,7 @@ body {
 
 .arrow {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   user-select: none;
   transition: transform 0.3s ease;
 }
@@ -226,7 +228,7 @@ body {
   color: #9c7851;
   cursor: pointer;
   text-decoration: underline;
-  font-size: 14px;
+  font-size: 20px;
   user-select: none;
 }
 
@@ -265,10 +267,25 @@ body {
   background-color: #9c7851;
   color: white;
 }
+
+.page-title {
+  font-size: 40px;
+  color: #f7f7f7;
+  background: #f7f7f7;
+  background-color: #735557;
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Grid layout cho các card */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 24px;
   padding: 40px;
   background: #f7f7f7;
@@ -277,7 +294,7 @@ body {
 /* Card đơn */
 .card {
   background: white;
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -289,19 +306,19 @@ body {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  border-top-right-radius:20px;
 }
 
 .card h3 {
   padding: 16px;
   margin: 0;
-  font-size: 18px;
+  font-size: 22px;
   color: #333;
 }
 
 
 .card {
   position: relative;
-  border-radius: 20px;
   overflow: visible; /* cho phép phần label tràn ra */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   background: white;
@@ -317,7 +334,7 @@ body {
   color: white;
   padding: 5px 12px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 17px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transform: rotate(-10deg);
@@ -361,25 +378,37 @@ footer {
   }
 
   .menu-item {
-    font-size: 16px;
+    font-size: 19px;
   }
 
   .submenu a {
-    font-size: 15px;
+    font-size: 19px;
   }
 
   .account-form input,
   .account-form button {
-    font-size: 15px;
+    font-size: 19px;
   }
 
   .logo img {
     height: 50px;
   }
+
+  .page-title {
+    font-size: 28;
+    padding: 12px 20px;
+  }
+
+  .card-container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+  }
 }
 
 /* ĐIỆN THOẠI */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   * {
     margin: 0;
     padding: 0;
@@ -412,11 +441,11 @@ footer {
 
   #searchInput {
     width: 100%;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   #searchResults li {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .menu {
@@ -439,16 +468,16 @@ footer {
 }
 
   .menu-item {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .submenu a {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .account-form input,
   .account-form button {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .search-toggle,
@@ -457,6 +486,18 @@ footer {
   }
 
   .arrow {
-    font-size: 18px;
+    font-size: 21px;
+  }
+
+  .page-title {
+    font-size: 30px;
+    padding: 10px 15px;
+  }
+
+  .card-container {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
   }
 }

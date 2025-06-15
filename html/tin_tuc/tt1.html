@@ -7,39 +7,61 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-
-  <!-- PHẦN NAVBAR GẮN Ở ĐÂY -->
-  <!-- Nav-bar -->
+<!--Nav-->
+<div class="all">
   <nav class="navbar">
     <div class="navbar-left">
+  <!--logo-->
       <div class="logo">
         <img src="/BAITAPLON/img/logo.jpg" alt="Logo" />
       </div>
     </div>
     <div class="navbar-right">
-        <a href="/BAITAPLON/html/trangchu.html" class="home-toggle"><i class="fa fa-home"></i></a>
+  <!--Home-->
+  <a href="/BAITAPLON/html/trangchu.html" class="home-toggle">
+    <i class="fa fa-home"></i>
+  </a>
+  <!--Tìm kiếm-->
       <div class="search-toggle" onclick="toggleSearch()">
         <i class="fa fa-search"></i>
       </div>
       <div id="searchBox" class="search-submenu">
-        <input type="text" id="searchInput" placeholder="Tìm tỉnh thành..." />
-        <ul id="searchResults"></ul>
-      </div>
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <i class="fa fa-bars"></i>
-      </div>
-    </div>
-  </nav>
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <ul id="searchResults">
+          <li data-value="an-giang" data-folder="where">An Giang</li>
+          <li data-value="ba-ria---vung-tau" data-folder="where">Bà Rịa - Vũng Tàu</li>
+          <li data-value="ben-tre" data-folder="where">Bến Tre</li>
+          <li data-value="binh-duong" data-folder="where">Bình Dương</li>
+          <li data-value="binh-phuoc" data-folder="where">Bình Phước</li>
 
-  <!-- Menu thả -->
-  <div class="menu" id="menu">
-    <div class="menu-item"><a href="/BAITAPLON/html/log-in.html" id="accountLink">Tài khoản</a></div>
-    <div class="menu-item cac_loai_hinh_du_lich">
-      <div class="menu-header" onclick="toggleSubMenu('travelTypesSubmenu', this)">
-        Các loại hình du lịch
-        <span class="arrow">&#9660</span>
+          <li data-value="rung-tram-tra-su" data-folder="tc_where">Rừng Tràm Trà Sư</li>
+          <li data-value="cho-noi-long-xuyen" data-folder="tc_where">Chợ nổi Long Xuyên</li>
+          <li data-value="suoi-khoang-nong-binh-chau" data-folder="tc_where">Suối khoáng nóng Bình Châu</li>
+          <li data-value="chua-banh-xeo" data-folder="tc_where">Chùa Bánh Xèo</li>
+          <li data-value="lang-nghe-banh-trang-my-long" data-folder="tc_where">Làng nghề bánh tráng Mỹ Lồng</li>
+          <li data-value="khu-du-lich-dai-nam" data-folder="tc_where">Khu du lịch Đại Nam</li>
+          <li data-value="vuon-quoc-gia-bu-gia-map" data-folder="tc_where">Vườn quốc gia Bù Gia Mập</li>
+        </ul>
       </div>
-      <div class="submenu" id="travelTypesSubmenu">
+  <!--menu-->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</nav>
+    <!--TP Menu-->
+      <div class="menu" id="menu">
+      <!-- Tài khoản -->
+        <div class="menu-item">
+          <a href="/BAITAPLON/html/log-in.html" id="accountLink">Tài khoản</a>
+        </div>
+        <!-- Các loại hình du lịch -->
+        <div class="menu-item cac_loai_hinh_du_lich">
+          <div class="menu-header" onclick="toggleSubMenu('travelTypesSubmenu', this)">
+            Các loại hình du lịch
+            <span class="arrow">&#9660</span>
+          </div>
+          <div class="submenu" id="travelTypesSubmenu">
             <a href="/BAITAPLON/html/clhdl/clhdl_1.html">Du lịch nghỉ dưỡng</a>
             <a href="/BAITAPLON/html/clhdl/clhdl_2.html">Du lịch sinh thái</a>
             <a href="/BAITAPLON/html/clhdl/clhdl_3.html">Du lịch văn hóa - lịch sử</a>
@@ -47,11 +69,13 @@
             <a href="/BAITAPLON/html/clhdl/clhdl_5.html">Du lịch ẩm thực</a>
             <a href="/BAITAPLON/html/clhdl/clhdl_6.html">Du lịch tự túc</a>
             <a href="/BAITAPLON/html/clhdl/clhdl_7.html">Du lịch theo tour</a>
+          </div>
+        </div>
+        <a href="/BAITAPLON/html/tin_tuc/tt_all.html" class="menu-item">Tin tức</a>
+        <a href="/BAITAPLON/html/gthieu_lhe.html" class="menu-item">Giới thiệu - Liên hệ</a>
       </div>
     </div>
-    <a href="/BAITAPLON/html/tin_tuc/tt_all.html" class="menu-item">Tin tức</a>
-    <a href="/BAITAPLON/html/gthieu_lhe.html" class="menu-item">Giới thiệu - Liên hệ</a>
-  </div>
+  </nav>
     <button id="backBtn" onclick="history.back()">
         <i class="fas fa-arrow-left"></i>
     </button>
@@ -71,13 +95,163 @@
   </div>
 
   <p>Nha Trang luôn làm say đắm lòng những tín đồ du lịch với vẻ đẹp phong phú và thơ mộng. Sự hòa quyện giữa nhịp sống sôi động và vẻ đẹp biển đảo đã tạo nên một sức hút khó cưỡng với những vị khách ghé thăm. Dưới đây là 15 cảnh đẹp Nha Trang, hãy cùng Traveloka khám phá xem đó là nơi nào nhé!</p>
-  <p><b>1. Hòn Tằm</b><br>Nằm trong vịnh Nha Trang, Hòn Tằm hay còn gọi là Thủy Kim Sơn là hòn đảo xinh đẹp rộng hơn 110ha cách trung tâm thành phố chỉ khoảng 7 km về phía Đông Nam. Nhìn từ xa, nơi đây tựa như một con tằm màu xanh nằm nổi bật giữa những muôn vàn hòn đá lớn nhỏ, xù xì. Đến với Hòn Tằm, bạn sẽ được chiêm ngưỡng vẻ đẹp hoang sơ, thơ mộng, làn nước biển trong vắt như pha lê, cùng hàng cây xanh rì rào trong gió. Bầu không khí trong lành và thanh mát khiến mọi lo toan dường như tan biến, mang đến cảm giác thư giãn tuyệt đối.</p>
-  <p><b>1. Hòn Tằm</b><br>Nằm trong vịnh Nha Trang, Hòn Tằm hay còn gọi là Thủy Kim Sơn là hòn đảo xinh đẹp rộng hơn 110ha cách trung tâm thành phố chỉ khoảng 7 km về phía Đông Nam. Nhìn từ xa, nơi đây tựa như một con tằm màu xanh nằm nổi bật giữa những muôn vàn hòn đá lớn nhỏ, xù xì. Đến với Hòn Tằm, bạn sẽ được chiêm ngưỡng vẻ đẹp hoang sơ, thơ mộng, làn nước biển trong vắt như pha lê, cùng hàng cây xanh rì rào trong gió. Bầu không khí trong lành và thanh mát khiến mọi lo toan dường như tan biến, mang đến cảm giác thư giãn tuyệt đối.</p>
+  <div>
+    <b>1. Hòn Tằm</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Nằm trong vịnh Nha Trang, Hòn Tằm hay còn gọi là Thủy Kim Sơn là hòn đảo xinh đẹp rộng hơn 110ha cách trung tâm thành phố chỉ khoảng 7 km về phía Đông Nam. Nhìn từ xa, nơi đây tựa như một con tằm màu xanh nằm nổi bật giữa những muôn vàn hòn đá lớn nhỏ, xù xì. Đến với Hòn Tằm, bạn sẽ được chiêm ngưỡng vẻ đẹp hoang sơ, thơ mộng, làn nước biển trong vắt như pha lê, cùng hàng cây xanh rì rào trong gió. Bầu không khí trong lành và thanh mát khiến mọi lo toan dường như tan biến, mang đến cảm giác thư giãn tuyệt đối.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>2. Đảo Điệp Sơn</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Nằm trong vịnh Vân Phong cách trung tâm thành phố Nha Trang khoảng 60 km, đảo Điệp Sơn là một điểm đến nổi bật với cảnh sắc thiên nhiên hoang sơ và kỳ thú. Quần đảo này bao gồm ba hòn đảo nhỏ: Hòn Bịp, Hòn Giữa và Hòn Đuốc, được nối liền với nhau bằng một con đường cát trắng dài gần 1km nằm giữa biển. Vào những thời điểm thủy triều rút, con đường này hiện ra rõ nét, tạo nên một khung cảnh độc đáo như bước đi giữa đại dương.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>3. Vịnh San Hô</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Gần khu bảo tồn biển Hòn Mun nổi tiếng, Vịnh San Hô là điểm đến lý tưởng cho những ai yêu thích thiên nhiên và khám phá đại dương. Nơi đây không chỉ gây ấn tượng bởi làn nước xanh trong vắt, mà còn sở hữu hệ sinh thái biển phong phú với gần 80 loài san hô, hải quỳ và hơn 70 loài cá sặc sỡ, tạo nên một thế giới dưới nước sống động và đầy màu sắc.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>4. Hòn Mun</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Cách trung tâm thành phố Nha Trang khoảng 14 km, Hòn Mun là một trong những điểm đến không thể bỏ qua khi khám phá vẻ đẹp biển đảo nơi đây. Với diện tích gần 160 km², Hòn Mun gây ấn tượng bởi những tảng đá đen tuyền như gỗ mun cùng các mỏm đá nhô cao và vách đá dựng đứng đầy kỳ vĩ. Sự hòa quyện giữa màu xanh trong của biển, sắc xanh mát của cây cối và màu đen huyền bí của đá tạo nên một khung cảnh hoang sơ nhưng đầy mê hoặc để bạn tìm về sự bình yên sau những ngày làm việc căng thẳng.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>5. Bãi Sỏi</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Tọa lạc trên đảo Hòn Miễu, cách trung tâm thành phố Nha Trang chỉ khoảng 6 km và đất liền chưa đầy 1 km, Bãi Sỏi – còn gọi là Bãi Sạn – là một trong những bãi biển sở hữu vẻ đẹp hoang sơ và lãng mạn bậc nhất. Điểm đặc biệt của nơi đây chính là những viên sỏi tự nhiên với đủ sắc độ từ xám nhạt, xám đậm đến trắng tinh khôi, trải dài khắp bãi biển. Kết hợp với làn nước xanh ngọc trong vắt, khung cảnh tại Bãi Sỏi hiện lên như một bức tranh thiên nhiên đầy cuốn hút.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>6. Đảo Bình Hưng</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Đảo Bình Hưng còn được gọi là Hòn Chút hay Hòn Tý, là một viên ngọc thô nằm cách đất liền chỉ khoảng 1 km, thuộc xã Cam Bình, thành phố Cam Ranh, tỉnh Khánh Hòa. Dù có diện tích chưa đến 2 km², nhưng nơi đây lại là một trong “Tứ Bình” nổi tiếng bên cạnh Bình Lập, Bình Ba và Bình Tiên, và thường được ví như tiểu Maldives của Việt Nam nhờ vào vẻ đẹp hoang sơ, yên bình và đầy quyến rũ.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>7. Đảo Khỉ</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Cách trung tâm thành phố khoảng 18km về phía Bắc, Đảo Khỉ là “vương quốc khỉ” độc đáo, nơi sinh sống của hơn 1.500 cá thể khỉ hoang dã. Không chỉ là điểm đến thú vị cho gia đình và trẻ nhỏ, Đảo Khỉ còn là nơi bạn có thể hòa mình vào thiên nhiên, tận mắt quan sát những tập tính đáng yêu của loài khỉ và ghi lại những khoảnh khắc thân thiện, gần gũi giữa con người và động vật.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>8. Nhà Hát Đó</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Nhà hát Đó là nơi bạn được chiêm ngưỡng vẻ đẹp giao thoa giữa truyền thống và hiện đại trong quần thể VegaCity Nha Trang. Được lấy cảm hứng từ chiếc “đó” – một loại nông cụ bắt cá quen thuộc của người Việt, công trình mang dáng dấp mộc mạc nhưng ấn tượng, nổi bật bên bờ biển xanh ngắt, tạo nên một background check-in cực chất cho giới trẻ và tín đồ mê khám phá.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>9. Khu du lịch Gành Nhảy</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Khu du lịch Gành Nhảy là điểm đến lý tưởng dành cho những ai yêu vẻ đẹp thiên nhiên hoang sơ nhưng vẫn muốn tận hưởng không khí vui tươi bên gia đình và bạn bè. Chỉ cần đặt chân đến đây, bạn sẽ bị thu hút ngay bởi làn nước biển trong xanh như ngọc, bãi cát trắng mịn trải dài, những rạn san hô rực rỡ sắc màu ẩn mình dưới làn nước, cùng các món đặc sản địa phương thơm ngon, độc đáo.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>10. Tháp Chàm Po Nagar</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Tọa lạc trên đồi Cù Lao, nhìn ra dòng sông Cái hiền hòa, Tháp Chàm Po Nagar là một trong những dấu ấn kiến trúc – văn hóa đặc sắc nhất mà bạn không thể bỏ lỡ khi đến với Nha Trang. Quần thể đền tháp Chăm cổ được xây dựng từ thế kỷ 8 đến thế kỷ 13, là minh chứng sống động cho sự tài hoa của người Chăm xưa.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>11. Vịnh Vân Phong</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Vịnh Vân Phong là một trong những vịnh biển hoang sơ và quyến rũ nhất của Khánh Hòa, cách trung tâm Nha Trang khoảng 40km. Với làn nước trong xanh, bãi cát trắng mịn và những dãy núi uốn lượn bao quanh, bạn sẽ được tận hưởng cảm giác yên bình và tách biệt hoàn toàn với nhịp sống ồn ào. Nơi đây nổi tiếng với những bãi biển như Sơn Đừng hay Đầm Môn mang trong mình vẻ đẹp tự nhiên khó cưỡng.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>12. Hòn Vợ - Hòn Chồng</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Nếu bạn đến Nha Trang, thì Hòn Vợ - Hòn Chồng thì đây là một địa điểm không nên bỏ lỡ. Nơi đây nổi bật với những khối đá chồng lên nhau một cách kỳ lạ giữa khung cảnh biển trời khoáng đạt. Hòn Chồng là một tảng đá lớn vươn ra biển, bên cạnh là cụm đá nhỏ hơn gọi là Hòn Vợ, gắn liền với truyền thuyết tình yêu đầy cảm xúc.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>13. Bãi biển Trần Phú</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Nằm dọc theo đường Trần Phú, thành phố Nha Trang, tỉnh Khánh Hòa, Việt Nam. Đây là con đường ven biển nổi tiếng, kéo dài hơn 6 km từ phía Bắc đến phía Nam thành phố, ôm trọn bờ vịnh Nha Trang.
+Bãi biển Trần Phú nằm ngay trung tâm thành phố Nha Trang, dài khoảng 6 km với cát trắng mịn và nước biển trong xanh. Đây là nơi lý tưởng để tắm biển, dạo chơi và ngắm hoàng hôn tuyệt đẹp. Xung quanh có nhiều quán cà phê, nhà hàng và khách sạn tiện nghi phục vụ du khách.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>14. Đảo Bình Lập</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Nằm cách trung tâm thành phố Nha Trang khoảng 80km Đảo Bình Lập được mệnh danh là "Maldives của Việt Nam" và là cảnh đẹp Nha Trang mà bạn nên một lần trải nghiệm cùng gia đình và bạn., khi đến đây, bạn sẽ được ngắm nhìn khung cảnh hoang sơ và yên bình với làn nước biển trong xanh, bãi cát trắng mịn cùng khung cảnh núi non thơ mộng.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>15. Suối khoáng nóng I-Resort Nha Trang</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Ngoài những cảnh đẹp Nha Trang được yêu thích, Suối khoáng nóng I-Resort là điểm đến lý tưởng cho những ai muốn thư giãn và chăm sóc sức khỏe sau một ngày dài khám phá cách trung tâm thành phố Nha Trang khoảng 4km. Nơi đây như một ốc đảo thu nhỏ giữa lòng thiên nhiên, được bao quanh bởi núi non hùng vĩ và dòng sông Cái hiền hòa. Kiến trúc của I-Resort gây ấn tượng với sự hòa quyện tinh tế giữa gỗ, đá và lá dừa nước, những vật liệu mộc mạc mang hơi thở của tự nhiên, tạo nên không gian gần gũi và thanh bình.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+
   <!-- PHẦN FOOTER GẮN Ở ĐÂY -->
   <footer>
     <p>One Country - Endless Journeys <br> Powered by 13 VIETNAM TRAVEL.</p>
   </footer>
   </footer>
-
+  <script src="/BAITAPLON/js/tin_tuc/tt_con.js"></script>
 </body>
 </html>

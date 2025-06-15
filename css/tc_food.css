@@ -15,6 +15,7 @@ body {
   font-family: "Baskerville", Times New Roman, serif;
   background: white;
   overflow-x: hidden;
+  background-color:#f7f7f7 ;
 }
 
 /* Navbar tổng */
@@ -87,7 +88,8 @@ body {
 }
 
 #searchResults {
-  list-style: none;
+  display: none;
+  list-style: none; 
   margin-top: 5px;
   max-height: 150px;
   overflow-y: auto;
@@ -238,42 +240,6 @@ body {
   user-select: none;
 }
 
-
-/* Search submenu */
-.search-submenu {
-  padding: 10px 20px;
-  max-height: 100px !important;
-  border-left: none;
-  border-top: 1px solid #ccc;
-}
-
-#searchInput {
-  width: 100%;
-  padding: 8px 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-#searchResults {
-  list-style: none;
-  margin-top: 5px;
-  max-height: 150px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#searchResults li {
-  padding: 6px 10px;
-  cursor: pointer;
-}
-
-#searchResults li:hover {
-  background-color: #9c7851;
-  color: white;
-}
-
 .main-box {
   background-color: rgba(255, 255, 255, 0.85);
   margin: 55px;
@@ -377,6 +343,19 @@ body {
   margin-bottom: 15px;
   margin-top: 15px;
   font-size: 20px;
+}
+
+.info-section a {
+  color: #A62C2C;
+  text-decoration: none;
+  margin-bottom: 35px;
+  margin-top: 15px;
+  font-size: 20px;
+  padding:10px;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */

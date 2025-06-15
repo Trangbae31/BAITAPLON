@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bến Tre</title>
+  <link rel="stylesheet" href="/BAITAPLON/css/tc_food.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!--Nav-->
+<div class="all">
+  <nav class="navbar">
+    <div class="navbar-left">
+  <!--logo-->
+      <div class="logo">
+        <img src="/BAITAPLON/img/logo.jpg" alt="Logo" />
+      </div>
+    </div>
+    <div class="navbar-right">
+  <!--Home-->
+  <a href="/BAITAPLON/html/trangchu.html" class="home-toggle">
+    <i class="fa fa-home"></i>
+  </a>
+  <!--Tìm kiếm-->
+      <div class="search-toggle" onclick="toggleSearch()">
+        <i class="fa fa-search"></i>
+      </div>
+      <div id="searchBox" class="search-submenu">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <ul id="searchResults">
+          <li data-value="an-giang" data-folder="where">An Giang</li>
+          <li data-value="ba-ria---vung-tau" data-folder="where">Bà Rịa - Vũng Tàu</li>
+          <li data-value="ben-tre" data-folder="where">Bến Tre</li>
+          <li data-value="binh-duong" data-folder="where">Bình Dương</li>
+          <li data-value="binh-phuoc" data-folder="where">Bình Phước</li>
+
+          <li data-value="rung-tram-tra-su" data-folder="tc_where">Rừng Tràm Trà Sư</li>
+          <li data-value="cho-noi-long-xuyen" data-folder="tc_where">Chợ nổi Long Xuyên</li>
+          <li data-value="suoi-khoang-nong-binh-chau" data-folder="tc_where">Suối khoáng nóng Bình Châu</li>
+          <li data-value="chua-banh-xeo" data-folder="tc_where">Chùa Bánh Xèo</li>
+          <li data-value="lang-nghe-banh-trang-my-long" data-folder="tc_where">Làng nghề bánh tráng Mỹ Lồng</li>
+          <li data-value="khu-du-lich-dai-nam" data-folder="tc_where">Khu du lịch Đại Nam</li>
+          <li data-value="vuon-quoc-gia-bu-gia-map" data-folder="tc_where">Vườn quốc gia Bù Gia Mập</li>
+        </ul>
+      </div>
+  <!--menu-->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</nav>
+    <!--TP Menu-->
+      <div class="menu" id="menu">
+      <!-- Tài khoản -->
+        <div class="menu-item">
+          <a href="/BAITAPLON/html/log-in.html" id="accountLink">Tài khoản</a>
+        </div>
+        <!-- Các loại hình du lịch -->
+        <div class="menu-item cac_loai_hinh_du_lich">
+          <div class="menu-header" onclick="toggleSubMenu('travelTypesSubmenu', this)">
+            Các loại hình du lịch
+            <span class="arrow">&#9660</span>
+          </div>
+          <div class="submenu" id="travelTypesSubmenu">
+            <a href="/BAITAPLON/html/clhdl/clhdl_1.html">Du lịch nghỉ dưỡng</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_2.html">Du lịch sinh thái</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_3.html">Du lịch văn hóa - lịch sử</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_4.html">Du lịch mạo hiểm</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_5.html">Du lịch ẩm thực</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_6.html">Du lịch tự túc</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_7.html">Du lịch theo tour</a>
+          </div>
+        </div>
+        <a href="/BAITAPLON/html/tin_tuc/tt_all.html" class="menu-item">Tin tức</a>
+        <a href="/BAITAPLON/html/gthieu_lhe.html" class="menu-item">Giới thiệu - Liên hệ</a>
+      </div>
+    </div>
+  </nav>
+
+  <button id="backBtn" onclick="history.back()">
+    <i class="fas fa-arrow-left"></i>
+  </button>
+
+   <!-- Khung chính chứa nội dung -->
+  <div class="main-box">
+    <!-- Carousel ảnh -->
+    <div class="carousel-container">
+      <div class="carousel-slide active">
+        <img src="/BAITAPLON/img/img_dl/ben_tre/dd2/food/1.2.jpg" alt="Ảnh 1" />
+      </div>
+      <div class="carousel-slide">
+        <img src="/BAITAPLON/img/img_dl/ben_tre/dd2/food/1.1.jpg" alt="Ảnh 2" />
+      </div>
+      <div class="carousel-slide">
+        <img src="/BAITAPLON/img/img_dl/ben_tre/dd2/food/1.3.jpg" alt="Ảnh 3" />
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">❮</button>
+      <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <!-- Tên địa điểm -->
+    <div class="name"><b>Nhà hàng Hương Xưa Giồng Trôm</b></div>
+
+    <!-- Thông tin chính -->
+    <div class="info-section">
+      <h2><i class="fas fa-map-marker-alt"></i> Vị trí</h2>
+      <p>Số 130, Khu phố 1, Thị trấn Giồng Trôm, huyện Giồng Trôm, tỉnh Bến Tre</p>
+      <h2><i class="fas fa-info-circle"></i> Thông tin mô tả</h2>
+      <p>Giờ mở cửa: 06:00 – 22:00
+        <br>Mức giá: 100.000 – 150.000 VNĐ/người
+        <br>Đánh giá: Nhà hàng nổi bật với không gian rộng rãi, thoáng mát và thiết kế mang đậm phong cách miền Tây sông nước. Thực đơn đa dạng với các món ăn dân dã được chế biến từ hải sản tươi sống, bò, gà... Đội ngũ nhân viên nhiệt tình, thân thiện, tạo cảm giác dễ chịu cho thực khách.
+        <br>Khoảng cách đến làng nghề: Khoảng 3 km</p>
+      <h2><i class="fa fa-phone"></i> Liên hệ</h2>
+      <a href="tel:0123456789">0123 456 789</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>One Country - Endless Journeys <br> Powered by 13 VIETNAM TRAVEL.</p>
+  </footer>
+
+  <script src="/BAITAPLON/js/tc_food.js"></script>
+</body>
+</html>

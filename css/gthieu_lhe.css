@@ -7,6 +7,7 @@ body {
   font-family: "Baskerville", Times New Roman, serif;
   background: white;
   overflow-x: hidden;
+  background-color:#f7f7f7 ;
 }
 
 /* Navbar tổng */
@@ -79,7 +80,8 @@ body {
 }
 
 #searchResults {
-  list-style: none;
+  display: none;
+  list-style: none; 
   margin-top: 5px;
   max-height: 150px;
   overflow-y: auto;
@@ -329,6 +331,22 @@ body {
   font-size: 20px;
 }
 
+.social-links a {
+  margin-right: 12px;
+  text-decoration: none;
+  color: #F6F1DE;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #73946B; /* hoặc màu nổi bật khác */
+}
+
+.social-links i {
+  margin-right: 5px;
+}
+
 /* Câu trích dẫn */
 .quote {
   font-style: italic;
@@ -341,6 +359,68 @@ body {
 .description {
   color: #444;
   font-size: 22px;
+}
+
+.feedback-form {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #F1F0E9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feedback-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.feedback-form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0b8e71;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #004d3c;
+}
+
+.thongbao {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+  font-style: italic;
+}
+
+.hienthi-phanhoi {
+  display: none;
+  background-color: #f9f9f9;
+  border-left: 4px solid #4caf50;
+  padding: 10px 15px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 
 /* Footer */

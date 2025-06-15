@@ -2,8 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", sans-serif;
-  background: url("/BAITAPLON/img/logo.jpg") no-repeat center center fixed;
-  background-size: cover;
 }
 
 * {
@@ -15,6 +13,7 @@ body {
   font-family: "Baskerville", Times New Roman, serif;
   background: white;
   overflow-x: hidden;
+  background-color:#f7f7f7 ;
 }
 
 /* Navbar tổng */
@@ -87,7 +86,8 @@ body {
 }
 
 #searchResults {
-  list-style: none;
+  display: none;
+  list-style: none; 
   margin-top: 5px;
   max-height: 150px;
   overflow-y: auto;
@@ -384,8 +384,20 @@ body {
 }
 
 .suggest-section h2 {
-  color: #d2d0a0;
+  color: #D29F80;
   margin-bottom: 10px;
+}
+
+.suggest-section h1 {
+  font-size: 28px;
+  color: #780C28;
+  margin-bottom: 10px;
+}
+
+.scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .card-container {
@@ -485,6 +497,15 @@ footer {
   .logo img {
     height: 50px;
   }
+
+  .card-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .card {
+    flex: 0 0 calc((100% - 30px) / 3); /* 3 card - 2 gap (15px * 2) */
+    width: auto; /* override width cũ */
+  }
 }
 
 /* ĐIỆN THOẠI */
@@ -567,5 +588,14 @@ footer {
 
   .arrow {
     font-size: 18px;
+  }
+
+  .card-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .card {
+    flex: 0 0 100%;
+    width: auto;
   }
 }

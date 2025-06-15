@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Bình Dương</title>
+  <link rel="stylesheet" href="/BAITAPLON/css/where.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!--Nav-->
+<div class="all">
+  <nav class="navbar">
+    <div class="navbar-left">
+  <!--logo-->
+      <div class="logo">
+        <img src="/BAITAPLON/img/logo.jpg" alt="Logo" />
+      </div>
+    </div>
+    <div class="navbar-right">
+  <!--Home-->
+  <a href="/BAITAPLON/html/trangchu.html" class="home-toggle">
+    <i class="fa fa-home"></i>
+  </a>
+  <!--Tìm kiếm-->
+      <div class="search-toggle" onclick="toggleSearch()">
+        <i class="fa fa-search"></i>
+      </div>
+      <div id="searchBox" class="search-submenu">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <ul id="searchResults">
+          <li data-value="an-giang" data-folder="where">An Giang</li>
+          <li data-value="ba-ria---vung-tau" data-folder="where">Bà Rịa - Vũng Tàu</li>
+          <li data-value="ben-tre" data-folder="where">Bến Tre</li>
+          <li data-value="binh-duong" data-folder="where">Bình Dương</li>
+          <li data-value="binh-phuoc" data-folder="where">Bình Phước</li>
+
+          <li data-value="rung-tram-tra-su" data-folder="tc_where">Rừng Tràm Trà Sư</li>
+          <li data-value="cho-noi-long-xuyen" data-folder="tc_where">Chợ nổi Long Xuyên</li>
+          <li data-value="suoi-khoang-nong-binh-chau" data-folder="tc_where">Suối khoáng nóng Bình Châu</li>
+          <li data-value="chua-banh-xeo" data-folder="tc_where">Chùa Bánh Xèo</li>
+          <li data-value="lang-nghe-banh-trang-my-long" data-folder="tc_where">Làng nghề bánh tráng Mỹ Lồng</li>
+          <li data-value="khu-du-lich-dai-nam" data-folder="tc_where">Khu du lịch Đại Nam</li>
+          <li data-value="vuon-quoc-gia-bu-gia-map" data-folder="tc_where">Vườn quốc gia Bù Gia Mập</li>
+        </ul>
+      </div>
+  <!--menu-->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</nav>
+    <!--TP Menu-->
+      <div class="menu" id="menu">
+      <!-- Tài khoản -->
+        <div class="menu-item">
+          <a href="/BAITAPLON/html/log-in.html" id="accountLink">Tài khoản</a>
+        </div>
+        <!-- Các loại hình du lịch -->
+        <div class="menu-item cac_loai_hinh_du_lich">
+          <div class="menu-header" onclick="toggleSubMenu('travelTypesSubmenu', this)">
+            Các loại hình du lịch
+            <span class="arrow">&#9660</span>
+          </div>
+          <div class="submenu" id="travelTypesSubmenu">
+            <a href="/BAITAPLON/html/clhdl/clhdl_1.html">Du lịch nghỉ dưỡng</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_2.html">Du lịch sinh thái</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_3.html">Du lịch văn hóa - lịch sử</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_4.html">Du lịch mạo hiểm</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_5.html">Du lịch ẩm thực</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_6.html">Du lịch tự túc</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_7.html">Du lịch theo tour</a>
+          </div>
+        </div>
+        <a href="/BAITAPLON/html/tin_tuc/tt_all.html" class="menu-item">Tin tức</a>
+        <a href="/BAITAPLON/html/gthieu_lhe.html" class="menu-item">Giới thiệu - Liên hệ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+    <h1 class="page-title">Bình Dương</h1>
+    <div class="province-intro-box">
+    <div class="province-description">
+        <p>Nằm ngay sát TP. Hồ Chí Minh, Bình Dương là tỉnh công nghiệp phát triển bậc nhất phía Nam, nhưng vẫn giữ được những nét truyền thống độc đáo trong văn hóa, làng nghề và cảnh quan sinh thái.</p>
+        <p>Du khách đến đây có thể khám phá Làng sơn mài Tương Bình Hiệp, Làng nghề gốm sứ lâu đời, hay dạo chơi tại các khu du lịch sinh thái như Thủy Châu, Đại Nam Văn Hiến, Hồ Dầu Tiếng… Trong đó, KDL Đại Nam nổi bật với quy mô đồ sộ, có biển nhân tạo, vườn thú, khu tâm linh và đường đua thể thao.</p>
+        <p>Ẩm thực Bình Dương phong phú với sự giao thoa giữa truyền thống và hiện đại. Các món nổi bật như bánh bèo bì, bánh khọt, gỏi gà măng cụt, cùng các đặc sản từ trái cây miệt vườn được nhiều người yêu thích.</p>
+        <p>Là vùng đất năng động, hiện đại nhưng không đánh mất bản sắc, Bình Dương là lựa chọn lý tưởng cho các gia đình, nhóm bạn trẻ muốn tìm một nơi vui chơi gần thành phố, vừa có nét truyền thống vừa nhiều trải nghiệm mới lạ.</p>
+    </div>
+    <p class="province-quote">"Bình Dương – vừa là nhịp sống hiện đại, vừa là ký ức đậm đà hồn quê."</p>
+    </div>
+
+  <main class="card-container">
+    <div class="card" onclick="location.href='/BAITAPLON/html/tc_where/khu-khu-du-lich-dai-nam.html'">
+        <img src="/BAITAPLON/img/img_dl/binh_duong/dd2/bia/1.JPG" alt="Khu du lịch Đại Nam">
+        <h3>Khu du lịch Đại Nam</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    <div class="card" onclick="location.href=''">
+      <img src="/BAITAPLON/img/img_minh_hoa.png" alt="card minh hoạ">
+      <h3>CARD MINH HOẠ LAYOUT</h3>
+    </div>
+    </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>One Country - Endless Journeys <br> Powered by 13 VIETNAM TRAVEL.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="/BAITAPLON/js/where.js"></script> 
+</body>
+</html>

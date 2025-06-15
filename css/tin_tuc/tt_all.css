@@ -7,6 +7,7 @@ body {
   font-family: "Baskerville", Times New Roman, serif;
   background: white;
   overflow-x: hidden;
+    background-color:#f7f7f7 ;
 }
 
 /* Navbar tổng */
@@ -247,7 +248,8 @@ body {
 }
 
 #searchResults {
-  list-style: none;
+  display: none;
+  list-style: none; 
   margin-top: 5px;
   max-height: 150px;
   overflow-y: auto;
@@ -281,7 +283,8 @@ body {
 
 .news-img {
   width: 25%;
-  height: auto;
+  max-width: 450px;
+  height: 150px; 
   object-fit: cover;
   border-radius: 8px;
   margin-right: 15px;
@@ -292,7 +295,7 @@ body {
 }
 
 .news-title {
-  font-size: 18px;
+  font-size: 25px;
   margin: 0;
   font-weight: bold;
   color: #333;
@@ -360,6 +363,33 @@ footer {
 
   .logo img {
     height: 50px;
+  }
+
+  .news-img {
+    width: 50%;
+    max-width: 450px;
+    height: 150px; 
+    margin-right: 10px;
+  }
+
+  .news-content {
+    width: 50%;
+  }
+
+  .news-title {
+    font-size: 20px;
+  }
+
+  .news-info {
+    font-size: 16px;
+  }
+
+  .source {
+    font-size: 14px;
+  }
+
+  .tag-logo {
+    height: 35px;
   }
 }
 
@@ -443,5 +473,36 @@ footer {
 
   .arrow {
     font-size: 18px;
+  }
+
+  .news-item {
+    flex-direction: column;
+  }
+
+  .news-img {
+    width: 100%;
+    max-width: 450px;
+    height: 150px; 
+    margin: 0 0 10px 0;
+  }
+
+  .news-content {
+    width: 100%;
+  }
+
+  .news-title {
+    font-size: 22px;
+  }
+
+  .news-info {
+    font-size: 17px;
+  }
+
+  .source {
+    font-size: 15px;
+  }
+
+  .tag-logo {
+    height: 38px;
   }
 }

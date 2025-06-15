@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Du Lịch Việt Nam</title>
   <link rel="stylesheet" href="/BAITAPLON/css/trangchu.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 <!--Nav-->
+<div class="all">
   <nav class="navbar">
     <div class="navbar-left">
   <!--logo-->
@@ -21,8 +22,22 @@
         <i class="fa fa-search"></i>
       </div>
       <div id="searchBox" class="search-submenu">
-        <input type="text" id="searchInput" placeholder="Tìm tỉnh thành..." />
-        <ul id="searchResults"></ul>
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <ul id="searchResults">
+          <li data-value="an-giang" data-folder="where">An Giang</li>
+          <li data-value="ba-ria---vung-tau" data-folder="where">Bà Rịa - Vũng Tàu</li>
+          <li data-value="ben-tre" data-folder="where">Bến Tre</li>
+          <li data-value="binh-duong" data-folder="where">Bình Dương</li>
+          <li data-value="binh-phuoc" data-folder="where">Bình Phước</li>
+
+          <li data-value="rung-tram-tra-su" data-folder="tc_where">Rừng Tràm Trà Sư</li>
+          <li data-value="cho-noi-long-xuyen" data-folder="tc_where">Chợ nổi Long Xuyên</li>
+          <li data-value="suoi-khoang-nong-binh-chau" data-folder="tc_where">Suối khoáng nóng Bình Châu</li>
+          <li data-value="chua-banh-xeo" data-folder="tc_where">Chùa Bánh Xèo</li>
+          <li data-value="lang-nghe-banh-trang-my-long" data-folder="tc_where">Làng nghề bánh tráng Mỹ Lồng</li>
+          <li data-value="khu-du-lich-dai-nam" data-folder="tc_where">Khu du lịch Đại Nam</li>
+          <li data-value="vuon-quoc-gia-bu-gia-map" data-folder="tc_where">Vườn quốc gia Bù Gia Mập</li>
+        </ul>
       </div>
   <!--menu-->
     <div class="menu-toggle" onclick="toggleMenu()">
@@ -98,7 +113,8 @@
 
   <div class="map">
       <img src="/BAITAPLON/img/trangchu/mapvn.png" alt="map" />
-    </div>
+  </div>
+  
   <footer>
     <p>One Country - Endless Journeys <br> Powered by 13 VIETNAM TRAVEL.</p>
   </footer>

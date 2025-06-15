@@ -9,6 +9,7 @@ body {
   font-family: "Baskerville", Times New Roman, serif;
   background: white;
   overflow-x: hidden;
+  background-color:#f7f7f7 ;
 }
 
 /* Navbar tổng */
@@ -81,7 +82,8 @@ body {
 }
 
 #searchResults {
-  list-style: none;
+  display: none;
+  list-style: none; 
   margin-top: 5px;
   max-height: 150px;
   overflow-y: auto;
@@ -301,6 +303,10 @@ body {
     display: block;
 }
 
+.content {
+  margin: 10px;
+}
+
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -318,6 +324,10 @@ h1 {
     color: #777;
 }
 
+b {
+  font-size: 22px;
+}
+
 .meta img {
     height: 40px;
 }
@@ -326,6 +336,29 @@ p {
     font-size: 20px;
     line-height: 1.7;
     margin: 0 0 12px 10px;
+}
+
+.text_n_button {
+  display: grid;
+  grid-template-columns: 1fr auto; /* nội dung chiếm phần lớn, nút chiếm phần nhỏ */
+  align-items: center;
+  column-gap: 10px; /* khoảng cách giữa p và nút */
+}
+
+.icon-btn {
+  background-color: #71C0BB;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.icon-btn:hover {
+  background-color: #207973;
 }
 
 .source {
@@ -378,6 +411,33 @@ footer {
   .logo img {
     height: 50px;
   }
+.header-strip img {
+    height: 200px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+b {
+  font-size: 22px;
+}
+
+.meta img {
+    height: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.icon-btn {
+  font-size: 24px;
+}
+
+.source {
+    font-size: 14px;
+}
 }
 
 /* ĐIỆN THOẠI */
@@ -461,4 +521,31 @@ footer {
   .arrow {
     font-size: 18px;
   }
+.header-strip img {
+    height: 200px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+b {
+  font-size: 22px;
+}
+
+.meta img {
+    height: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.icon-btn {
+  font-size: 24px;
+}
+
+.source {
+    font-size: 14px;
+}
 }

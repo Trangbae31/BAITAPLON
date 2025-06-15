@@ -1,5 +1,7 @@
 body {
   max-width: 600px;
+  height: 100vh;
+  overflow: hidden;
   margin: 40px auto;
   font-family: "Baskerville", Times New Roman, serif;
   padding: 60px;
@@ -90,20 +92,44 @@ span {
   margin-top: 10px;
 }
 
-/* Responsive cho máy tính bảng */
-@media (max-width: 768px) {
+/* Máy tính bảng */
+@media (max-width: 1025px) {
   body {
     padding: 40px 20px;
-    min-height: 100vh;         
+    font-size: 19px;
+    min-height: 100vh;
+    background-size: cover;       
+    background-position: center;    
+    background-repeat: no-repeat;
+  }
+  .khung_form {
+    max-width: 95%;
+    padding: 40px 30px;
+  }
+
+  input, button {
     font-size: 15px;
+    padding: 20px;
   }
 }
 
-/* Responsive cho điện thoại */
-@media (max-width: 480px) {
+/* Điện thoại */
+@media (max-width: 768px) {
   body {
     padding: 20px 10px;
+    font-size: 20px;
     min-height: 100vh;
-    font-size: 14px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .khung_form {
+    max-width: 95%;
+    padding: 25px 15px;
+  }
+
+  input, button {
+    font-size: 16px;
+    padding: 22px;
   }
 }

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 10 điểm đến nên ghé ở Bà Rịa - Vũng Tàu</title>
+  <link rel="stylesheet" href="/BAITAPLON/css/tin_tuc/tt_con.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<!--Nav-->
+<div class="all">
+  <nav class="navbar">
+    <div class="navbar-left">
+  <!--logo-->
+      <div class="logo">
+        <img src="/BAITAPLON/img/logo.jpg" alt="Logo" />
+      </div>
+    </div>
+    <div class="navbar-right">
+  <!--Home-->
+  <a href="/BAITAPLON/html/trangchu.html" class="home-toggle">
+    <i class="fa fa-home"></i>
+  </a>
+  <!--Tìm kiếm-->
+      <div class="search-toggle" onclick="toggleSearch()">
+        <i class="fa fa-search"></i>
+      </div>
+      <div id="searchBox" class="search-submenu">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <ul id="searchResults">
+          <li data-value="an-giang" data-folder="where">An Giang</li>
+          <li data-value="ba-ria---vung-tau" data-folder="where">Bà Rịa - Vũng Tàu</li>
+          <li data-value="ben-tre" data-folder="where">Bến Tre</li>
+          <li data-value="binh-duong" data-folder="where">Bình Dương</li>
+          <li data-value="binh-phuoc" data-folder="where">Bình Phước</li>
+
+          <li data-value="rung-tram-tra-su" data-folder="tc_where">Rừng Tràm Trà Sư</li>
+          <li data-value="cho-noi-long-xuyen" data-folder="tc_where">Chợ nổi Long Xuyên</li>
+          <li data-value="suoi-khoang-nong-binh-chau" data-folder="tc_where">Suối khoáng nóng Bình Châu</li>
+          <li data-value="chua-banh-xeo" data-folder="tc_where">Chùa Bánh Xèo</li>
+          <li data-value="lang-nghe-banh-trang-my-long" data-folder="tc_where">Làng nghề bánh tráng Mỹ Lồng</li>
+          <li data-value="khu-du-lich-dai-nam" data-folder="tc_where">Khu du lịch Đại Nam</li>
+          <li data-value="vuon-quoc-gia-bu-gia-map" data-folder="tc_where">Vườn quốc gia Bù Gia Mập</li>
+        </ul>
+      </div>
+  <!--menu-->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+</nav>
+    <!--TP Menu-->
+      <div class="menu" id="menu">
+      <!-- Tài khoản -->
+        <div class="menu-item">
+          <a href="/BAITAPLON/html/log-in.html" id="accountLink">Tài khoản</a>
+        </div>
+        <!-- Các loại hình du lịch -->
+        <div class="menu-item cac_loai_hinh_du_lich">
+          <div class="menu-header" onclick="toggleSubMenu('travelTypesSubmenu', this)">
+            Các loại hình du lịch
+            <span class="arrow">&#9660</span>
+          </div>
+          <div class="submenu" id="travelTypesSubmenu">
+            <a href="/BAITAPLON/html/clhdl/clhdl_1.html">Du lịch nghỉ dưỡng</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_2.html">Du lịch sinh thái</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_3.html">Du lịch văn hóa - lịch sử</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_4.html">Du lịch mạo hiểm</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_5.html">Du lịch ẩm thực</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_6.html">Du lịch tự túc</a>
+            <a href="/BAITAPLON/html/clhdl/clhdl_7.html">Du lịch theo tour</a>
+          </div>
+        </div>
+        <a href="/BAITAPLON/html/tin_tuc/tt_all.html" class="menu-item">Tin tức</a>
+        <a href="/BAITAPLON/html/gthieu_lhe.html" class="menu-item">Giới thiệu - Liên hệ</a>
+      </div>
+    </div>
+  </nav>
+    <button id="backBtn" onclick="history.back()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+
+<!-- Ảnh đầu bài -->
+  <div class="header-strip">
+    <img src="/BAITAPLON/img/tin_tuc/brvt.jpg" alt="Ảnh đầu bài">
+  </div>
+
+  <!-- Bài viết -->
+<div class="content">
+  <h1>Top 10 điểm đến nên ghé ở Bà Rịa - Vũng Tàu</h1>
+
+  <div class="meta">
+    <img src="/BAITAPLON/img/logo.knen.png" alt="Logo">
+    <span class="source">13 VIETNAM TRAVEL</span>
+  </div>
+
+  <p>Bà Rịa – Vũng Tàu là một trong những tỉnh thành du lịch nổi bật của miền Nam, sở hữu những bãi biển đẹp, suối khoáng nóng tự nhiên, núi rừng hùng vĩ và nhiều công trình tâm linh độc đáo. Nếu bạn đang tìm kiếm một điểm đến kết hợp giữa nghỉ dưỡng, khám phá và thư giãn, đừng bỏ qua danh sách 10 địa điểm ấn tượng sau:</p>
+  <div>
+    <b>1. Bãi Sau</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Bãi Sau là địa danh nổi tiếng nhất khi nhắc đến Vũng Tàu. Với bãi cát vàng trải dài, nước biển xanh biếc và sóng dịu nhẹ, nơi đây rất phù hợp để tắm biển và đi dạo. Dọc bãi biển là hàng loạt khách sạn, nhà hàng, quán ăn hải sản tươi sống phục vụ du khách. Vào buổi chiều, khung cảnh biển lên thơ với hoàng hôn đỏ rực rất thích hợp để chụp ảnh lưu niệm. Không khí nơi đây luôn nhộn nhịp nhưng vẫn mang lại cảm giác thư thái.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>2. Tượng Chúa Kitô Vua</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Tọa lạc trên đỉnh Núi Nhỏ, tượng Chúa Kitô Vua là một trong những biểu tượng thiêng liêng và ấn tượng của thành phố biển. Tượng cao 32m, sải tay rộng gần 18m, từ đây bạn có thể phóng tầm mắt nhìn toàn cảnh Vũng Tàu. Để lên đến tượng, du khách phải chinh phục khoảng 1.000 bậc thang đá, nhưng trải nghiệm leo núi giữa rừng cây xanh mát sẽ khiến bạn thích thú. Bên trong tượng có cầu thang xoắn dẫn lên hai cánh tay, nơi có view chụp hình “triệu like”.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>3. Hải đăng Vũng Tàu</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Ngọn hải đăng cổ kính nằm trên đỉnh núi Nhỏ không chỉ có ý nghĩa dẫn đường cho tàu thuyền mà còn là điểm check-in cực hot. Từ đây, bạn có thể thu trọn thành phố và biển cả vào tầm mắt, đặc biệt vào lúc sáng sớm hoặc chiều muộn. Con đường dẫn lên hải đăng quanh co, hai bên là rừng cây và view biển rất đẹp. Không khí trên đỉnh núi luôn trong lành, mát mẻ, phù hợp để nghỉ chân và ngắm cảnh.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>4. Khu du lịch Hồ Mây</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Được ví như “Đà Lạt thu nhỏ” của Vũng Tàu, Hồ Mây nằm trên đỉnh núi Lớn với độ cao hơn 200m so với mực nước biển. Bạn sẽ đi cáp treo để lên tới khu du lịch, chiêm ngưỡng toàn cảnh biển trời từ trên cao. Nơi đây có công viên giải trí, hồ sinh thái, vườn hoa, khu vui chơi cảm giác mạnh và các hoạt động cho gia đình. Đặc biệt, không khí mát mẻ quanh năm là điểm cộng tuyệt vời.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>5. Biển Long Hải</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Khác với sự sôi động của Vũng Tàu, biển Long Hải mang vẻ đẹp yên bình và hoang sơ. Nước biển trong xanh, bãi cát dài và không gian vắng lặng tạo cảm giác thư thái. Du khách có thể dậy sớm đón bình minh tuyệt đẹp, mua hải sản tươi từ ghe ngư dân mới về và cắm trại bên bờ biển. Gần Long Hải còn có đèo Nước Ngọt – cung đường ven biển đẹp nổi tiếng.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>6. Suối khoáng nóng Bình Châu</b><br> 
+    <div class="text_n_button">
+      <p>Một điểm đến lý tưởng cho những ai muốn chăm sóc sức khỏe và thư giãn giữa thiên nhiên. Suối khoáng nóng Bình Châu thuộc huyện Xuyên Mộc, được bao quanh bởi rừng nguyên sinh. Bạn có thể ngâm mình trong hồ khoáng, tắm bùn, massage thủy lực hoặc luộc trứng trực tiếp tại giếng trời với nhiệt độ 82–85°C. Khu du lịch Minera Hot Springs Bình Châu còn có nhiều tiện ích cao cấp như resort, spa và khu vui chơi. Đây là lựa chọn tuyệt vời cho kỳ nghỉ cuối tuần.</p>
+      <button class="icon-btn" onclick="window.location.href='/BAITAPLON/html/tc_where/suoi-khoang-nong-binh-chau.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>7. Đồi Con Heo</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Từng là một điểm hoang sơ, nay Đồi Con Heo đã trở thành địa điểm “sống ảo” nổi tiếng nhờ góc nhìn toàn cảnh biển và thành phố từ trên cao. Đặc biệt, khung cảnh hoàng hôn ở đây rất được lòng các bạn trẻ đam mê nhiếp ảnh. Đường lên đồi không quá khó, tuy nhiên nên chuẩn bị giày dép thoải mái. Không gian thoáng đãng, gió mát và view đẹp sẽ khiến bạn không muốn rời mắt.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>8. Hồ Tràm</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Hồ Tràm là điểm nghỉ dưỡng sang trọng được yêu thích, cách TP.HCM chỉ khoảng 2 giờ chạy xe. Bãi biển dài, nước trong, không quá đông người và có nhiều resort cao cấp như The Grand, Melia, InterContinental. Ngoài tắm biển, bạn có thể đi xe đạp ven biển, câu cá, chơi golf hoặc thưởng thức hải sản ngay tại resort. Một điểm đến tuyệt vời cho kỳ nghỉ dưỡng riêng tư.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>9. Đình thần Thắng Tam</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+      <p>Đây là công trình văn hóa lâu đời gắn với tín ngưỡng thờ cá Ông – nét đặc trưng của ngư dân miền biển. Kiến trúc đình mang đậm phong cách truyền thống với mái ngói rêu phong, câu đối chạm trổ công phu. Vào dịp lễ hội Nghinh Ông, nơi đây đón rất nhiều người dân và du khách đến dâng hương, cầu bình an, may mắn. Ghé thăm đình Thắng Tam cũng là dịp để bạn hiểu thêm về đời sống tinh thần của người dân Vũng Tàu.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <b>10. Thiền viện Trúc Lâm Chân Nguyên (Chùa Khỉ)</b><br> (không có href trong mũi tên)
+    <div class="text_n_button">
+        <p>Nằm giữa rừng cây ở Long Hải, ngôi chùa yên bình này thu hút đông đảo Phật tử và du khách đến tham quan, cầu an. Gọi là “chùa Khỉ” vì nơi đây có rất nhiều khỉ sinh sống tự nhiên, thân thiện và gần gũi với con người. Không gian chùa tĩnh lặng, cây xanh bao phủ tạo cảm giác thanh tịnh. Một nơi lý tưởng để tìm lại sự cân bằng trong tâm hồn giữa cuộc sống bộn bề.Nằm trong rừng núi Long Hải, chùa thanh tịnh với nhiều khỉ sinh sống tự nhiên. Một điểm đến thanh bình cho những ai muốn tĩnh tâm.</p>
+      <button class="icon-btn" onclick="window.location.href='hon_tam.html'">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+  
+</div>
+  <!-- PHẦN FOOTER GẮN Ở ĐÂY -->
+  <footer>
+    <p>One Country - Endless Journeys <br> Powered by 13 VIETNAM TRAVEL.</p>
+  </footer>
+  </footer>
+  <script src="/BAITAPLON/js/tin_tuc/tt_con.js"></script>
+</body>
+</html>
